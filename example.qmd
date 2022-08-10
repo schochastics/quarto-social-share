@@ -8,7 +8,7 @@ format:
     toc: true
 share:
   permalink: "https://mr.schochastics.net/"
-  content: "awesome page"
+  description: "awesome page"
   twitter: true
   facebook: true
   reddit: true

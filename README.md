@@ -1,37 +1,36 @@
-# Academicons Extension for Quarto
+# Add Share buttons to Quarto Document
 
-This extension provides support for
-[academicons](https://jpswalsh.github.io/academicons/). Icons can be used in
-HTML documents only.
-
-The code is adapted from the [fontawesome](https://github.com/quarto-ext/fontawesome) extension
+This extension allows to add buttons to share articles on various social media platforms.
 
 ## Installing
 
 ```
-$ quarto install extension schochastics/academicons
+$ quarto install extension schochastics/quarto-social-share
 ```
 
 This will install the extension under the `_extensions` subdirectory.
 If you're using version control, you will want to check in this directory.
 
 ## Using
-
-To embed an icon, use the `{{{< ai >}}}` shortcode. For example:
-
+Add the following to the yaml header of your document. You can set options to `false`
+if you don't want to display the respective share button.
 ```
-{{< ai arxiv >}} 
-{{< ai google-scholar >}}
-{{< ai open-access }}
+share:
+  permalink: "https://mr.schochastics.net/"
+  description: "awesome page"
+  twitter: true
+  facebook: true
+  reddit: true
+  stumble: true
+  tumblr: true
+  linkedin: true
+  email: true
 ```
 
-You can browse all of the available icons here:
-
-<https://jpswalsh.github.io/academicons/>
+`permalink` is the url you are going to share and `description` and optional text. 
 
 ## Example
 
-Here is the source code for a minimal example: [example.qmd](example.qmd)
-
-This is the output of `example.qmd` for [HTML](https://schochastics.github.io/academicons/).
+Here is the source code for a minimal example: [example.qmd](example.qmd)  
+A rendered version can be found [here](https://schochastics.github.io/social-share/). 
 

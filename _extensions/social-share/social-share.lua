@@ -13,8 +13,8 @@ end
 function Meta(m)
   ensureHtmlDeps()
   local share_url = pandoc.utils.stringify(m.share.permalink)
-  if m.share.content~=nil then
-    post_title = pandoc.utils.stringify(m.share.content)
+  if m.share.description~=nil then
+    post_title = pandoc.utils.stringify(m.share.description)
   else 
     post_title = pandoc.utils.stringify(m.title)
   end
