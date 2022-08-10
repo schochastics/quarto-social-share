@@ -1,0 +1,6 @@
+title: Share Post on Social Media
+author: David Schoch
+version: 0.0.1
+contributes:
+  filters:
+    - social-share.lua
