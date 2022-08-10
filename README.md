@@ -1,4 +1,4 @@
-# Add Share buttons to Quarto Document
+# Add Share buttons to Quarto HTML Documents
 
 This extension allows to add buttons to share articles on various social media platforms.
 
