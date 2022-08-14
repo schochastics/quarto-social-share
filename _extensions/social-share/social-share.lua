@@ -6,7 +6,7 @@ local function ensureHtmlDeps()
   quarto.doc.addHtmlDependency({
     name = 'social-share',
     version = '0.1.0',
-    stylesheets = {'social-share.css','assets/css/all.css'}
+    stylesheets = {'social-share.css'}
   })
 end
 
@@ -42,4 +42,3 @@ function Meta(m)
   share_text = share_text .. share_end
   quarto.doc.includeText("after-body", share_text)
 end
-
