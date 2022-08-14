@@ -17,6 +17,8 @@ Add the following to the yaml header of your document.
 You can set options to `false` if you don't want to display the respective share button.
 
 ```yaml
+filters:
+  - social-share
 share:
   permalink: "https://mr.schochastics.net/"
   description: "awesome page"
