@@ -1,17 +1,20 @@
-local share_start = '<div class= "page-columns page-rows-contents page-layout-article"><div class="social-share">'
-local share_end = '</div></div>'
-local share_text = share_start
-
 local function ensureHtmlDeps()
   quarto.doc.addHtmlDependency({
     name = 'social-share',
     version = '0.1.0',
-    stylesheets = {'social-share.css'}
+    stylesheets = {
+      'social-share.css',
+      '_extensions/quarto-ext/fontawesome/assets/css/all.css'
+    }
   })
 end
 
 function Meta(m)
   ensureHtmlDeps()
+  local share_start = '<div class= "page-columns page-rows-contents page-layout-article"><div class="social-share">'
+  local share_end = '</div></div>'
+  local share_text = share_start
+
   local share_url = pandoc.utils.stringify(m.share.permalink)
   if m.share.description~=nil then
     post_title = pandoc.utils.stringify(m.share.description)
