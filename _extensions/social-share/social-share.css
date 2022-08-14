@@ -1,5 +1,4 @@
 /*adapted from: https://www.remysheppard.com/blog/hugo-share-buttons/*/
-<style>
 .social-share {
   display: flex;
   flex-direction: row;
@@ -88,4 +87,3 @@
   background: #00A4EF;
     color: white;
 }
-</style>
