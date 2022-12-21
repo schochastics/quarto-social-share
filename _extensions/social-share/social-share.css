@@ -87,3 +87,13 @@
   background: #00A4EF;
     color: white;
 }
+
+.social-share a.mastodon {
+  border-color: #6364FF;
+    color: #6364FF;
+}
+
+.social-share a.mastodon:hover {
+  background: #6364FF;
+    color: white;
+}

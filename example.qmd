@@ -16,6 +16,7 @@ share:
   tumblr: true
   linkedin: true
   email: true
+  mastodon: true
 ---
 
 ## Quarto

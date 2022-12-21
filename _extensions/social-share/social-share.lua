@@ -42,6 +42,9 @@ function Meta(m)
   if m.share.tumblr then
     share_text = share_text .. '<a href="https://www.tumblr.com/share/link?url='.. share_url ..'&name='.. post_title ..'" target="_blank" class="tumblr"><i class="fa-brands fa-tumblr fa-fw fa-lg"></i></a>'
   end
+  if m.share.mastodon then
+    share_text = share_text .. '<a href="javascript:void(0);" onclick="var mastodon_instance=prompt(\'Mastodon Instance / Server Name?\'); if(typeof mastodon_instance===\'string\' &amp;&amp; mastodon_instance.length){this.href=\'https://\'+mastodon_instance+\'/share?text=' .. post_title..' '.. share_url ..'\'}else{return false;}" target="_blank" class="mastodon"><i class="fa-brands fa-mastodon fa-fw fa-lg"></i></a>'
+  end
   share_text = share_text .. share_end
   quarto.doc.includeText("after-body", share_text)
 end

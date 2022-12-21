@@ -29,6 +29,7 @@ share:
   tumblr: true
   linkedin: true
   email: true
+  mastodon:true
 ```
 
 `permalink` is the url you are going to share and `description` and optional text.
@@ -36,4 +37,4 @@ share:
 ## Example
 
 Here is the source code for a minimal example: [example.qmd](example.qmd)  
-A rendered version can be found [here](https://schochastics.github.io/social-share/).
+A rendered version can be found [here](https://schochastics.quarto.pub/social-share-buttons/).
