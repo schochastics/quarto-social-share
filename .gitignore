@@ -3,3 +3,5 @@
 *_files/
 .Rproj.user
 quarto-social-share.Rproj
+
+/.luarc.json

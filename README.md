@@ -29,10 +29,18 @@ share:
   tumblr: true
   linkedin: true
   email: true
-  mastodon:true
+  mastodon: true
 ```
 
 `permalink` is the url you are going to share and `description` and optional text.
+
+the location of the buttons can so far only be placed after the html body, or
+before the html body. To place it before the html body, add
+```
+location: "before-body"
+```
+
+to the share metadata.
 
 ## Example
 
