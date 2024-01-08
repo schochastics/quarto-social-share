@@ -17,7 +17,10 @@ share:
   linkedin: true
   email: true
   mastodon: true
+  location: "before-body"
+  divclass: "test"
 ---
+
 
 ## Quarto
 
