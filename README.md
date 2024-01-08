@@ -42,6 +42,9 @@ location: "before-body"
 
 to the share metadata.
 
+The parameter `divclass` allows applying custom classes to the div containing
+the share buttons
+
 ## Example
 
 Here is the source code for a minimal example: [example.qmd](example.qmd)  
