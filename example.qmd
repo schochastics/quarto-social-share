@@ -17,6 +17,7 @@ share:
   linkedin: true
   email: true
   mastodon: true
+  bsky: true
 ---
 
 

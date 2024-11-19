@@ -100,3 +100,13 @@
     background: #6364FF;
     color: white;
 }
+
+.social-share a.bsky {
+    border-color: #0A7AFF;
+    color: #0A7AFF;
+}
+
+.social-share a.bsky:hover {
+    border-color: #0A7AFF;
+    color: white;
+}

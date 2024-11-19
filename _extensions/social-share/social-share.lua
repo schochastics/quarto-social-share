@@ -1,10 +1,10 @@
 local function ensureHtmlDeps()
     quarto.doc.addHtmlDependency({
         name = 'social-share',
-        version = '0.1.0',
+        version = '1.0.0',
         stylesheets = {
             'social-share.css',
-            '_extensions/quarto-ext/fontawesome/assets/css/all.css'
+            '_extensions/quarto-ext/fontawesome/assets/css/all.min.css'
         }
     })
 end
@@ -79,6 +79,14 @@ function Meta(m)
             ' ' ..
             share_url ..
             '\'}else{return false;}" target="_blank" class="mastodon"><i class="fa-brands fa-mastodon fa-fw fa-lg"></i></a>'
+    end
+    if m.share.bsky then
+        share_text = share_text ..
+            '<a href="https://bsky.app/intent/compose?text=' ..
+            share_url ..
+            ' ' ..
+            post_title ..
+            '" target="_blank" class="bsky"><i class="fa-brands fa-bluesky"></i></a>'
     end
     share_text = share_text .. share_end
     if m.share.location then

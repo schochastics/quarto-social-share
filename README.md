@@ -30,6 +30,7 @@ share:
   linkedin: true
   email: true
   mastodon: true
+  bsky: true
 ```
 
 `permalink` is the url you are going to share and `description` and optional text.
