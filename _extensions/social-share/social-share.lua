@@ -30,9 +30,9 @@ function Meta(m)
     end
     if m.share.twitter then
         share_text = share_text ..
-            '<a href="https://twitter.com/share?url=' ..
+            '<a href="https://x.com/intent/post?url=' ..
             share_url ..
-            '&text=' .. post_title .. '" target="_blank" class="twitter"><i class="fab fa-twitter fa-fw fa-lg"></i></a>'
+            '&text=' .. post_title .. '" target="_blank" class="twitter"><i class="fa-brands fa-x-twitter fa-fw fa-lg"></i></a>'
     end
     if m.share.linkedin then
         share_text = share_text ..
